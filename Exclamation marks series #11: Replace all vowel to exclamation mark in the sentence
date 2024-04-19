@@ -1,0 +1,6 @@
+def replace_exclamation(st):
+    simbols = ('a', 'e', 'i', 'o', 'u', 'a')
+    for i in st:
+        if i.lower() in simbols:
+            st = st.replace(i,'!')
+    return st
