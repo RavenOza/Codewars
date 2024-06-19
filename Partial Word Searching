@@ -10,3 +10,5 @@ def word_search(query, seq):
             result.append(i)
     return result if result else ['None']
 #-3-------------------------------------------
+def word_search(query, seq):
+    return [i for i in seq if query.lower() in i.lower()] or ['None']
