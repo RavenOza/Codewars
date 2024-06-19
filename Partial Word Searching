@@ -5,8 +5,8 @@ def word_search(query, seq):
 #-2-------------------------------------------
 def word_search(query, seq):
     result = []
-    for i in query:
-        if str(seq).lower() in i.lower():
+    for i in seq:
+        if str(query).lower() in i.lower():
             result.append(i)
     return result if result else ['None']
 #-3-------------------------------------------
