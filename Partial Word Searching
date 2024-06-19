@@ -1,4 +1,12 @@
+#-1------------------------------------------
 def word_search(query, seq):
     result = list(filter(lambda i: query.lower() in i.lower(), seq))
     return result if result else ["None"]
-   
+#-2-------------------------------------------
+def word_search(query, seq):
+    result = []
+    for i in query:
+        if str(seq).lower() in i.lower():
+            result.append(i)
+    return result if result else ['None']
+#-3-------------------------------------------
