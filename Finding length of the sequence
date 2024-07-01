@@ -1,0 +1,6 @@
+def length_of_sequence(arr,n):
+    result = []
+    for i, x  in enumerate(arr):
+        if x == n:
+            result.append(i)
+    return 0 if len(result) > 2 or len(result) < 2 else len(arr[result[0]:result[1]])+1
